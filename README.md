@@ -59,5 +59,8 @@ const store = new Store("./data");
 const apples = store.collection<Apple>("apples"); // apples: Collection<Apple>
 const all = apples.list(); // all: Apple[]
 const one = apples.get("BJ4E9mQOG"); // one: Apple
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 ```
