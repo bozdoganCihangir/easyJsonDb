@@ -1,0 +1,16 @@
+{
+    "name": "fake-nodejs-database",
+    "version": "1.0.0",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "repository": "https://github.com/jankoboz/fake-nodejs-database.git",
+    "author": "Cihangir Bozdogan <cihangirrbozzd@gmail.com>",
+    "license": "MIT",
+    "dependencies": {
+        "@types/node": "^14.14.37",
+        "typescript": "^4.2.3"
+    },
+    "scripts": {
+        "build": "tsc"
+    }
+}
