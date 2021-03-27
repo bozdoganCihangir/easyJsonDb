@@ -40,3 +40,21 @@ That's it. All operations are synchronous.
 Files are read at startup and written after each modification. You can manually edit a JSON file and provide some initial data, as long as you do that before you start the application.
 
 
+## Usage with TypeScript
+
+If you use this module from TypeScript you can specify an interface representing the type of objects stored in each collection. E.g.
+
+```ts
+import { Store } from "fake-nodejs-database";
+
+interface Apple {
+    id: string;
+    variety: string;
+    weight: number;
+}
+
+const store = new Store("./data");
+const apples = store.collection<Apple>("apples"); // apples: Collection<Apple>
+const all = apples.list(); // all: Apple[]
+const one = apples.get("BJ4E9mQOG"); // one: Apple
+```
