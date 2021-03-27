@@ -4,6 +4,11 @@ Another "fake" database for Node.js that stores data in local JSON files, for te
 
 ## Usage
 
+Install the package from npm
+```sh
+    yarn add fake-nodejs-database
+```
+
 Create a `Store` instance specifying in which folder to store the data, then create a collections for each object type you want to store:
 
 ```js
