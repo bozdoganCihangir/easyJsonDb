@@ -1,7 +1,8 @@
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import path from "path";
 import { generate as generateId } from "shortid";
-import { IEntity } from "..";
+import path from "path";
+
+import { IEntity } from "../IEntity";
 
 export class Collection<T extends IEntity> {
     private file: string;
@@ -11,6 +12,7 @@ export class Collection<T extends IEntity> {
         this.file = path.join(dir, name + ".json");
         this.load();
     }
+
     create(obj: object): string {
         const entity = { id: generateId(), ...obj } as T;
         this.entities.push(entity);

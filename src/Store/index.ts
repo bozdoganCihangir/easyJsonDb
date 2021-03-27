@@ -1,7 +1,9 @@
 import { existsSync, mkdirSync } from "fs";
-import { Collection, IEntity } from "..";
 
-export class DataStore {
+import { IEntity } from "../IEntity";
+import { Collection } from "..";
+
+export class Store {
     constructor(private dir: string) {
         if (!existsSync(dir)) {
             mkdirSync(dir);
