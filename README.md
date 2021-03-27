@@ -59,10 +59,3 @@ const apples = store.collection<Apple>("apples"); // apples: Collection<Apple>
 const all = apples.list(); // all: Apple[]
 const one = apples.get("BJ4E9mQOG"); // one: Apple
 ```
-
-## Available commands
-
-```sh
-    yarn build
-    yarn test
-```
