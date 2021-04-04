@@ -57,3 +57,7 @@ const apples = store.collection<Apple>("apples"); // apples: Collection<Apple>
 const all = apples.list(); // all: Apple[]
 const one = apples.get("BJ4E9mQOG"); // one: Apple
 ```
+
+## Contributing
+
+If you can, please contribute by reporting issues, discussing ideas, or submitting pull requests with patches and new features. I do my best to respond to all issues and pull requests within a day or two. Thanks
