@@ -1,10 +1,12 @@
 # Fake Nodejs Database
 
-Another "fake" database for Node.js that stores data in local JSON files, for testing and sample applications.
+Another "fake" database for Node.js that stores data in local JSON files, for testing and sample applications. Npm https://www.npmjs.com/package/fake-nodejs-database
 
 ## Usage
 
-Install the package from npm `yarn add fake-nodejs-database`
+Install the package from npm
+
+`npm i fake-nodejs-database`
 
 Create a `Store` instance specifying in which folder to store the data, then create a collections for each object type you want to store:
 
