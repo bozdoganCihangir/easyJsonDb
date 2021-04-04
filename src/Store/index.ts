@@ -1,6 +1,5 @@
 import { existsSync, mkdirSync } from "fs";
 
-import { IEntity } from "../IEntity";
 import { Collection } from "..";
 
 export class Store {
@@ -11,7 +10,7 @@ export class Store {
         this.dir = dir;
     }
 
-    collection<T extends IEntity>(name: string): Collection<T> {
+    collection<T extends { id: string }>(name: string): Collection<T> {
         return new Collection<T>(this.dir, name);
     }
 }

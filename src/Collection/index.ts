@@ -2,9 +2,7 @@ import { existsSync, readFileSync, writeFileSync } from "fs";
 import { generate as generateId } from "shortid";
 import path from "path";
 
-import { IEntity } from "../IEntity";
-
-export class Collection<T extends IEntity> {
+export class Collection<T extends { id: string }> {
     private file: string;
     private entities: T[] = [];
 
