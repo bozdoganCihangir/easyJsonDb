@@ -1,4 +1,4 @@
-const { Store } = require("fake-nodejs-database");
+const { Store } = require("easy-json-db");
 
 // start with an empty [data] directory or you can populate it manually
 const store = new Store("./data");
