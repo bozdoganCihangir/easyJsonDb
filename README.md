@@ -53,7 +53,7 @@ Files are read at startup and written after each modification. You can manually 
 
 ## Usage with TypeScript
 
-If you use this module from TypeScript you can specify an interface representing the type of objects stored in each collection. E.g.
+Specify an interface representing the type of objects stored in each collection. E.g.
 
 ```ts
 
