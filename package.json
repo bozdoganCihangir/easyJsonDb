@@ -3,7 +3,7 @@
     "version": "1.0.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
-    "repository": "https://github.com/jankoboz/easy-json-db.git",
+    "repository": "https://github.com/jankoboz/easyJsonDb.git",
     "author": "Cihangir Bozdogan <cihangirrbozzd@gmail.com>",
     "license": "MIT",
     "dependencies": {
