@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "fake-nodejs-database": "^1.0.3"
+        "easy-json-db": "^1.0.3"
     }
 }
