@@ -1,6 +1,6 @@
 # Fake Nodejs Database
 
-Yes another "fake" database for Node.js, But a little simpler, It stores data in local JSON files, for testing and sample applications. Npm https://www.npmjs.com/package/fake-nodejs-database
+Fake database for Node.js, very simple and with zero configurtion. It stores data in local JSON files, designed for testing and sample applications. Npm https://www.npmjs.com/package/fake-nodejs-database
 
 ## Usage
 
