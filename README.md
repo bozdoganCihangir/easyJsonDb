@@ -8,7 +8,7 @@ Npm https://www.npmjs.com/package/easy-json-db
 
 Install the package from npm
 
-`$ npm i fake-nodejs-database`
+`$ npm i easy-json-db`
 
 Create a `Store` instance specifying in which folder to store the data, then create a collections for each object type you want to store:
 
