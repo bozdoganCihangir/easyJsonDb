@@ -1,5 +1,4 @@
 import { existsSync, readFileSync, writeFileSync } from "fs";
-import { generate as generateId } from "shortid";
 import path from "path";
 
 export class Collection<T extends { id: string }> {
@@ -12,7 +11,7 @@ export class Collection<T extends { id: string }> {
     }
 
     create(obj: object): string {
-        const entity = { id: generateId(), ...obj } as T;
+        const entity = { id: this.uid(), ...obj } as T;
         this.entities.push(entity);
         this.save();
         return entity.id;
@@ -58,5 +57,9 @@ export class Collection<T extends { id: string }> {
         writeFileSync(this.file, JSON.stringify(this.entities, null, 2), {
             encoding: "utf8",
         });
+    }
+
+    private uid() {
+        return Math.random().toString(36).substring(7).toUpperCase();
     }
 }

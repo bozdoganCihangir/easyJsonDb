@@ -1,5 +1,5 @@
 {
-    "name": "easy-json-db",
+    "name": "easy-json-db-nodejs",
     "version": "1.0.0",
     "main": "dist/index.js",
     "types": "dist/index.d.ts",
@@ -8,9 +8,7 @@
     "license": "MIT",
     "dependencies": {
         "@types/node": "^14.14.37",
-        "@types/shortid": "^0.0.29",
         "jest": "^26.6.3",
-        "shortid": "^2.2.16",
         "tmp": "^0.2.1",
         "typescript": "^4.2.3"
     },
