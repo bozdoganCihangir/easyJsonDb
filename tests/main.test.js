@@ -1,5 +1,5 @@
 const tmp = require("tmp");
-const { Store } = require("./dist");
+const { Store } = require("../dist");
 
 const store = new Store(tmp.dirSync().name);
 const apples = store.collection("apples");
