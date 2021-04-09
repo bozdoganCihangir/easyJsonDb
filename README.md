@@ -1,6 +1,8 @@
-# Fake Nodejs Database
+# easyJsonDb
 
-Fake database for Node.js, very simple and with zero configurtion. It stores data in local JSON files, designed for testing and sample applications. Npm https://www.npmjs.com/package/fake-nodejs-database
+easyJsonDb is a filesystem database for Node.js. Straightforward and zero configuration. It stores data in local JSON files. Specifically designed for testing and sample applications.
+
+Npm https://www.npmjs.com/package/easy-json-db
 
 ## Usage
 
@@ -13,7 +15,7 @@ Create a `Store` instance specifying in which folder to store the data, then cre
 ```js
 
 // import the package
-const { Store } = require("fake-nodejs-database");
+const { Store } = require("easy-json-db");
 
 // initialize the database
 const store = new Store("./data");
@@ -57,7 +59,7 @@ Specify an interface representing the type of objects stored in each collection.
 
 ```ts
 
-import { Store } from "fake-nodejs-database";
+import { Store } from "easy-json-db";
 
 interface Apple {
     id: string;
