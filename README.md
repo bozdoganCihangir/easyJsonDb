@@ -2,20 +2,20 @@
 
 easyJsonDb is a filesystem database for Node.js. Straightforward and zero configuration. It stores data in local JSON files. Specifically designed for testing and sample applications.
 
-Npm https://www.npmjs.com/package/easy-json-db
+Npm https://www.npmjs.com/package/easy-json-db-nodejs
 
 ## Usage
 
 Install the package from npm
 
-`$ npm i easy-json-db`
+`$ npm i easy-json-db-nodejs`
 
 Create a `Store` instance specifying in which folder to store the data, then create a collections for each object type you want to store:
 
 ```js
 
 // import the package
-const { Store } = require("easy-json-db");
+const { Store } = require("easy-json-db-nodejs");
 
 // initialize the database
 const store = new Store("./data");
@@ -59,7 +59,7 @@ Specify an interface representing the type of objects stored in each collection.
 
 ```ts
 
-import { Store } from "easy-json-db";
+import { Store } from "easy-json-db-nodejs";
 
 interface Apple {
     id: string;

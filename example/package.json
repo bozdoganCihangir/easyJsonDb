@@ -1,5 +1,5 @@
 {
     "dependencies": {
-        "easy-json-db": "^1.0.3"
+        "easy-json-db-nodejs": "^1.0.5"
     }
 }
